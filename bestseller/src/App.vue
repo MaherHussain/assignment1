@@ -1,11 +1,22 @@
 <template>
-  <div>
-  
+  <main-menu :categories="mainCategories" />
+  <div class="flex">
+      <side-bar />
+    <main class="">
+      <router-view />
+    </main>
   </div>
 </template>
 
 <script setup lang="ts">
-</script>
-<style scoped>
+import { SideBar, MainMenu } from "./components";
+import data from "./assets/data";
 
-</style>
+const { categories } = data;
+
+const mainCategories = Object.entries(categories.categories).map((category) => {
+  return {
+    ...category[1],
+  };
+});
+</script>

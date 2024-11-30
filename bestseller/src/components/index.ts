@@ -1,0 +1,6 @@
+export { default as SideBar } from './side-bar.vue'
+export  { default as MainMenu } from './main-menu.vue'
+export { default as ProductCard } from './product-card.vue'
+export  { default as PromotionalSpot } from  './promotional-spot.vue'
+export  { default as ProductImageSlider } from './product-images.vue'
+export {default as Variants} from './variants.vue'
